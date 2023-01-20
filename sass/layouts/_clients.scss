@@ -1,0 +1,38 @@
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  .section-title {
+    margin-bottom: 50px;
+  }
+  .thumb {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .item {
+    width: 170px;
+    height: 92px;
+  }
+  .icon {
+    fill: currentColor;
+  }
+}
+
+.clients .logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--color-icon);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color-acent);
+    color: var(--color-acent);
+  }
+}
