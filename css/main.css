@@ -39,11 +39,25 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section-title {
@@ -229,10 +243,6 @@ img {
 .section-skill {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.section-skill__list {
-  display: flex;
 }
 
 .section-skill__item + .section-skill__item {
