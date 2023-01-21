@@ -16,7 +16,7 @@
   }
 }
 .adrress-all {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
     margin-bottom: 60px;
   }
@@ -52,16 +52,15 @@
 }
 
 .call {
-  @media screen and (max-width: 1200px) {
-    //  display: block;
+  @media screen and (max-width: 1199px) {
+   
     text-align: center;
     margin-bottom: 60px;
   }
   .social-call {
     display: flex;
-    // justify-content: flex-start;
     gap: 10px;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
       justify-content: center;
     }
   }
@@ -77,13 +76,14 @@
   }
 }
 .footer {
-  // .address-footer {
-  //   display: flex;
-  //   gap: 70px;
-  //   align-items: baseline;
-  // }
-
-  .item-social-call {
+  .address-footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  gap: 93px;
+  align-items: baseline;
+  }
+}
+   .item-social-call {
     width: 44px;
     height: 44px;
   }
@@ -118,17 +118,25 @@
     background-color: var(--color-acent);
   }
 }
+.footer-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 165px;
+    align-items: baseline;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 60px;
+  }
+}
 
-// .subscribe {
-//   margin-left: 13px;
-// }
 .subscribe {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
 .form-email {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -136,7 +144,7 @@
 }
 .email-input {
   width: 358px;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
     margin-bottom: 20px;
   }
@@ -159,8 +167,7 @@
 .form-email .btn-telegram {
   width: 200px;
   height: 50px;
-  margin: 0;
-  // margin-left: 12px;
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -175,17 +182,18 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+ 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: var(--color-btn-active);
   }
 }
-
-// .form-email {
-//   display: flex;
-//   gap: 12px;
-// }
-
+.form-email {
+@media screen and (min-width: 1200px) {
+ display: flex;
+ gap: 12px;
+}
+}
 .btn-telegram .text {
   margin-bottom: 0;
   margin-top: 0;

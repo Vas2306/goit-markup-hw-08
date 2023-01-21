@@ -668,7 +668,7 @@ img {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .adrress-all {
     text-align: center;
     margin-bottom: 60px;
@@ -702,7 +702,7 @@ img {
   color: var(--color-acent);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .call {
     text-align: center;
     margin-bottom: 60px;
@@ -712,7 +712,7 @@ img {
   display: flex;
   gap: 10px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .call .social-call {
     justify-content: center;
   }
@@ -727,6 +727,13 @@ img {
   color: var(--color-text-white);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .address-footer {
+    display: flex;
+    gap: 93px;
+    align-items: baseline;
+  }
+}
 .footer .item-social-call {
   width: 44px;
   height: 44px;
@@ -759,13 +766,27 @@ img {
   background-color: var(--color-acent);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    gap: 165px;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tablet {
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .subscribe {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .form-email {
     text-align: center;
     margin-left: auto;
@@ -789,7 +810,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-text-white);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .email-input {
     width: 450px;
     margin-bottom: 20px;
@@ -799,7 +820,6 @@ img {
 .form-email .btn-telegram {
   width: 200px;
   height: 50px;
-  margin: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -818,6 +838,13 @@ img {
 }
 .form-email .btn-telegram:hover {
   background-color: var(--color-btn-active);
+}
+
+@media screen and (min-width: 1200px) {
+  .form-email {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .btn-telegram .text {
