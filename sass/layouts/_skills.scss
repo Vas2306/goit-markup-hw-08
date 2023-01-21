@@ -10,21 +10,16 @@
 
 .section-skill__list {
   @media screen and (min-width: 768px) {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 
     gap: 30px;
   }
-  @media screen and (min-width: 768px) {
-    width: 738px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1170px;
-  }
 }
 .section-skill__item {
   @media screen and (min-width: 480px) {
-    width: 450px;
+    width: 100%;
   }
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
@@ -48,10 +43,20 @@
 }
 .section-skill__caption {
   margin-top: 30px;
+ 
+}
+  // .section-skill__caption {
+  // @media screen and (max-width: 767px) {
+  //   margin-bottom: 30px;
+  // }
+// }
+
+.caption-skill:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
 }
+
 .caption-skill__title {
   margin-bottom: 10px;
 

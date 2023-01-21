@@ -1,17 +1,35 @@
 .section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   .section-title {
     margin-bottom: 50px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
   }
+
   .thumb {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+
     gap: 30px;
   }
   .item {
-    width: 170px;
-    height: 92px;
+    @media screen and (min-width: 480px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 150px) / 6);
+    }
   }
   .icon {
     fill: currentColor;

@@ -65,6 +65,13 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1199px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 .visually-hidden {
@@ -253,25 +260,16 @@ img {
 
 @media screen and (min-width: 768px) {
   .section-skill__list {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
 }
-@media screen and (min-width: 768px) {
-  .section-skill__list {
-    width: 738px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section-skill__list {
-    width: 1170px;
-  }
-}
 
 @media screen and (min-width: 480px) {
   .section-skill__item {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -301,8 +299,9 @@ img {
 .section-skill__caption {
   margin-top: 30px;
 }
+
 @media screen and (max-width: 767px) {
-  .section-skill__caption {
+  .section-skill__caption:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -331,6 +330,11 @@ img {
 
 .section-work {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
 }
 
 .section-work__container {
@@ -376,23 +380,50 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.section-team {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  background-color: var(--color-button-team);
+@media screen and (min-width: 768px) {
+  .section-team .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
-.team-list {
-  display: flex;
-  justify-content: space-between;
+.section-team {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: var(--color-button-team);
 }
-.team-list .item {
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.section-team .item {
   text-align: center;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list .title {
+@media screen and (min-width: 480px) {
+  .section-team .item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-team .item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-team .item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+.section-team .img-our-team {
+  width: 100%;
+}
+.section-team .title {
   margin-bottom: 10px;
   font-size: 16px;
   color: var(--color-title);
@@ -400,31 +431,34 @@ img {
   line-height: 1.19;
   margin-bottom: 10px;
 }
-.team-list .text {
+.section-team .text {
   margin-top: 0;
   margin-bottom: 16px;
   line-height: 1.19;
   color: var(--color-text);
 }
-
-.our-team {
+.section-team .our-team {
   margin-bottom: 50px;
 }
-
-.footer-card {
+@media screen and (max-width: 1199px) {
+  .section-team .our-team {
+    margin-bottom: 30px;
+  }
+}
+.section-team .footer-card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.footer-card .social-media {
+.section-team .social-media {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.footer-card .item-social {
+.section-team .item-social {
   width: 44px;
   height: 44px;
 }
-.footer-card .team-social-icon {
+.section-team .team-social-icon {
   fill: currentColor;
 }
 
@@ -445,20 +479,42 @@ img {
 }
 
 .section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section-clients .section-title {
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1199px) {
+  .section-clients .section-title {
+    margin-bottom: 30px;
+  }
+}
 .section-clients .thumb {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
-.section-clients .item {
-  width: 170px;
-  height: 92px;
+@media screen and (min-width: 480px) {
+  .section-clients .item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-clients .item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-clients .item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .section-clients .icon {
   fill: currentColor;
