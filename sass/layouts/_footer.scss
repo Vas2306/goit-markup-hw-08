@@ -145,7 +145,6 @@
   width: 358px;
   @media screen and (max-width: 1199px) {
     width: 450px;
-    margin-bottom: 20px;
   }
   padding-top: 15px;
   padding-bottom: 15px;
@@ -188,9 +187,13 @@
   }
 }
 .form-email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
   @media screen and (min-width: 1200px) {
-    display: flex;
-    gap: 12px;
+  flex-direction: row;
+  gap: 12px;
   }
 }
 .btn-telegram .text {
@@ -211,8 +214,4 @@
 
 .email-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
-}
-.btn-telegram-center {
-  display: flex;
-  justify-content: center;
 }

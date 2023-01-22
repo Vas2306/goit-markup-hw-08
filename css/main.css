@@ -840,7 +840,6 @@ img {
 @media screen and (max-width: 1199px) {
   .email-input {
     width: 450px;
-    margin-bottom: 20px;
   }
 }
 
@@ -867,9 +866,15 @@ img {
   background-color: var(--color-btn-active);
 }
 
+.form-email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
 @media screen and (min-width: 1200px) {
   .form-email {
-    display: flex;
+    flex-direction: row;
     gap: 12px;
   }
 }
@@ -891,11 +896,6 @@ img {
 
 .email-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.btn-telegram-center {
-  display: flex;
-  justify-content: center;
 }
 
 .backdrop {
