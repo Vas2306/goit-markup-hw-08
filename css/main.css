@@ -87,17 +87,7 @@ img {
   overflow: hidden;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .header-container .logo {
-  margin-right: 93px;
   color: var(--color-black-logo);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -113,43 +103,28 @@ img {
   }
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
 .logo-header-footer {
   color: var(--color-acent);
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .site-nav.list {
   display: flex;
-  align-items: center;
-}
-
-.site-nav .item + .item {
-  margin-left: 50px;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .site-nav .link {
-  display: block;
-  color: var(--color-title);
-}
-
-.site-nav .link,
-.auth-nav .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--color-title);
 }
 
 .site-nav .link:hover,
@@ -157,47 +132,16 @@ img {
   color: var(--color-acent);
 }
 
-.site-nav .link.current {
-  color: var(--color-acent);
-  position: relative;
-}
-.site-nav .link.current::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 4px;
-  bottom: -1px;
-  left: 0;
-  background-color: var(--color-acent);
-  border-radius: 2px;
+.header-container .nav {
+  min-width: 480px;
+  height: 60px;
+  display: flex;
+  gap: 276px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ---------------------Кнопки Email и телефон */
-.auth-nav.list {
-  display: flex;
-  margin-left: auto;
-}
-
-.auth-nav .item + .item {
-  margin-left: 30px;
-}
-
-.auth-nav .link {
-  color: var(--color-text);
-  fill: var(--color-text);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.auth-nav .link:hover, .auth-nav .link:focus {
-  color: var(--color-acent);
-  fill: var(--color-acent);
-}
-
-.auth-nav .logo {
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
 .nav .menu-button {
   display: inline-flex;
   margin: 0;
@@ -228,10 +172,11 @@ img {
 }
 
 .menu-container {
-  background-color: rgb(255, 172, 172);
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
+  background-color: var(--color-text-white);
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 48px;
+  padding-left: 40px;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
