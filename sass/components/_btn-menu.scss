@@ -21,7 +21,7 @@
 .menu-button.is-open .icon-menu {
   display: none;
 }
-.header {
+.header-container {
     position: relative;
 }
 .menu-container {
@@ -29,7 +29,7 @@
    
 
   @media screen and (max-width: 767px) {
-    text-align: center;
+    // text-align: center;
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 48px;

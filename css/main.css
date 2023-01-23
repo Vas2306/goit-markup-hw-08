@@ -307,10 +307,12 @@ img {
   }
 }
 
-.header .menu-container {
-  display: flex;
-  align-items: center;
-  height: 80px;
+@media screen and (min-width: 768px) {
+  .header .menu-container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header .menu-container {
@@ -348,7 +350,7 @@ img {
   display: none;
 }
 
-.header {
+.header-container {
   position: relative;
 }
 
@@ -357,7 +359,6 @@ img {
 }
 @media screen and (max-width: 767px) {
   .menu-container {
-    text-align: center;
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 48px;
