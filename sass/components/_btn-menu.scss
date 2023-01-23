@@ -21,6 +21,9 @@
 .menu-button.is-open .icon-menu {
   display: none;
 }
+// .menu-button.is-open .logo {
+//   opacity: 0;
+// }
 .header-container {
     position: relative;
 }
@@ -53,4 +56,15 @@
   // flex-grow: 1;
   // justify-content: space-between;
 }
+}
+
+
+.menu-cross .menu-button .icon-cross
+{
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-cross .menu-button:hover .icon-cross,
+.menu-cross .menu-button:focus .icon-cross
+{
+fill: var(--color-acent);
 }
