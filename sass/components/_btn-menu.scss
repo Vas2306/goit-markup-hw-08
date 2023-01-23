@@ -34,6 +34,7 @@
 
   @media screen and (max-width: 767px) {
     // text-align: center;
+    background-color: aqua;
     padding-top: 48px;
     padding-right: 15px;
     padding-bottom: 48px;
@@ -47,18 +48,17 @@
     height: 100vh;
     z-index: 5;
 
-
     &.is-open {
         display: block;
     }
   }
- 
+}
 @media screen and (min-width: 768px) {
   // display: flex;
   // flex-grow: 1;
   // justify-content: space-between;
 }
-}
+
 
 
 .menu-cross .menu-button .icon-cross
@@ -76,5 +76,8 @@ fill: var(--color-acent);
   z-index: 6;
   padding-top: 10px;
 } 
+}
+body {
+  background-color: aqua;
 }
 
