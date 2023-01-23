@@ -23,9 +23,8 @@
     <header class="header">
       <div class="header-container">
         <nav class="nav">
-
           <div class="logo-cross">
-            <a href="" class="logo" 
+            <a href="" class="logo"
               ><span class="logo-header-footer">Web</span>Studio</a
             >
             <div class="menu-cross">
@@ -211,41 +210,54 @@
           <ul class="section-work__list list">
             <li class="section-work__item">
               <div class="section-work__caption caption-work">
-                <img
-                  class="caption-work__img"
-                  src="./images/box01.jpg"
-                  alt="Людина працюэ за ноутом"
-                  width="370"
-                  height="294"
-                />
-
+                <picture>
+                  <source
+                    srcset="./images/box01.jpg 1x, ./images/box01-2x-min.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="caption-work__img"
+                    src="./images/box01.jpg"
+                    alt="Людина працюэ за ноутом"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="caption-work__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="section-work__item">
               <div class="section-work__caption caption-work">
-                <img
-                  class="caption-work__img"
-                  src="./images/box02.jpg"
-                  alt="Людина працюэ за ноутом"
-                  width="370"
-                  height="294"
-                />
-
-                <p class="caption-work__text">Мобільні додатки</p>
+                <source
+                srcset="./images/box02.jpg 1x, ./images/box02-2x-min.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="caption-work__img"
+                src="./images/box02.jpg"
+                alt="Людина працюэ за ноутом"
+                width="370"
+                height="294"
+              />
+            </picture>
+              <p class="caption-work__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="section-work__item">
               <div class="section-work__caption caption-work">
-                <img
-                  class="caption-work__img"
-                  src="./images/box03.jpg"
-                  alt="Людина працюэ за ноутом"
-                  width="370"
-                  height="294"
-                />
-
-                <p class="caption-work__text">Дизайнерські рішення</p>
+                <source
+                srcset="./images/box03.jpg 1x, ./images/box03-2x-min.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="caption-work__img"
+                src="./images/box03.jpg"
+                alt="Людина працюэ за ноутом"
+                width="370"
+                height="294"
+              />
+            </picture>
+               <p class="caption-work__text">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
