@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web studio</title>
+    <title>Web studio 08</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -20,7 +20,8 @@
   </head>
   <body>
     <!--                                           ХЕДЕР-->
-    <header class="header">
+
+    <!-- <header class="header">
       <div class="header-container">
         <nav class="nav">
           <a href="" class="logo"><span class="logo-header-footer">Web</span>Studio</a>
@@ -51,7 +52,83 @@
           </li>
         </ul>
       </div>
+    </header> -->
+
+    <header class="header">
+      <div class="header-container">
+        <nav class="nav">
+          <div class="logo-cross">
+            <a href="" class="logo"
+              ><span class="logo-header-footer">Web</span>Studio</a
+            >
+            <div class="menu-cross">
+              <button
+                class="menu-button"
+                type="button"
+                aria-controls="menu-container"
+                aria-expanded="false"
+                data-menu-button
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  aria-label="Переключатель мобильного меню"
+                >
+                  <use
+                    class="icon-cross"
+                    href="./images/sprite.svg#close-mobile"
+                  ></use>
+                  <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav list">
+              <li class="item"><a href="./index.html" class="link">Студія</a></li>
+              <li class="item">
+                <a href="" class="link current">Портфоліо</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакти</a></li>
+            </ul>
+
+           <div class="menu-mob-bottom">
+             <ul class="auth-nav list">
+               <li class="item">
+                 <a href="mailto:info@devstudio.com" class="link email">
+                   <svg class="logo" width="16" height="12">
+                     <use href="./images/sprite.svg#envelope"></use>
+                   </svg>
+                   info@devstudio.com</a
+                 >
+               </li>
+               <li class="item">
+                 <a href="tel:+380961111111" class="link phone">
+                   <svg class="logo" width="10" height="16">
+                     <use href="./images/sprite.svg#smartphone"></use>
+                   </svg>
+                   +38 096 111 11 11</a
+                 >
+               </li>
+             </ul>
+            
+             <ul class="list bottom-social">
+               <li class="item"><a class="link" href="">Instagram</a></li>
+               <li class="item"><a class="link" href="">Twitter</a></li>
+               <li class="item"><a class="link" href="">Facebook</a></li>
+               <li class="item"><a class="link not" href="">LinkedIn</a></li>
+             </ul>
+           </div>
+
+          </div>
+
+        </nav>
+      </div>
+
+      
     </header>
+
     <main>
       <section class="section section-footer">
         <div class="container">

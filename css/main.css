@@ -747,6 +747,9 @@ img {
   gap: 30px;
   justify-content: center;
 }
+.section-clients .item {
+  height: 92px;
+}
 @media screen and (min-width: 480px) {
   .section-clients .item {
     width: calc((100% - 30px) / 2);
