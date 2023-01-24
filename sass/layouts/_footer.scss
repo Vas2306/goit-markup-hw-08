@@ -147,8 +147,12 @@
 }
 .email-input {
   width: 358px;
+ 
   @media screen and (max-width: 1199px) {
     width: 450px;
+  }
+  @media screen and (max-width: 767px){
+    width: 100%;
   }
   padding-top: 15px;
   padding-bottom: 15px;

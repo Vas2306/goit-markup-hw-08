@@ -103,8 +103,9 @@
   color: var(--color-acent);
 }
 .site-nav .link.current {
+   color: var(--color-acent);
   @media screen and (min-width: 768px) {
-    color: var(--color-acent);
+   
   position: relative;
   &::after {
     display: block;
@@ -145,7 +146,10 @@ text-decoration: none;
   line-height: 1.14;
   letter-spacing: 0.02em;
  color: var(--color-title);
-
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+  font-size: 12px;
+  line-height: 1.17;
+ }
 }
 .header-container {
   .logo-cross {
@@ -221,7 +225,7 @@ margin-bottom: 0;
 .auth-nav .phone {
   @media screen and (max-width: 767px) {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -238,6 +242,7 @@ margin-bottom: 0;
 
 .bottom-social {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .bottom-social .link {
